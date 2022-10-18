@@ -17,7 +17,7 @@ public class Main {
         bProduced[0] = 100000;
         bProduced[1] = 90000;
         double[] bSold = new double[2];
-        bSold[0] = 100000;
+        bSold[0] = 80000;
         bSold[1] = 50000;
         Product b = new Product("Fanta", bProduced, bSold);
 
@@ -29,7 +29,7 @@ public class Main {
         cSold[1] = 100000;
         Product c = new Product("Sprite", cProduced, cSold);
 
-        List<Product> productList = new ArrayList<Product>();
+        List<Product> productList = new ArrayList<>();
         productList.add(a);
         productList.add(b);
         productList.add(c);

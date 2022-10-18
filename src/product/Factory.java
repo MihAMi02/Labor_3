@@ -31,9 +31,9 @@ public class Factory {
     public void makeRecommendations(){
         for(Product product : productLineup){
             switch (product.getDemandTrend()) {
-                case FALLING -> product.setRecommendedProduction((int) (product.getUnitsSold()[0] * 1.5));
+                case FALLING -> product.setRecommendedProduction((int) (product.getUnitsSold()[0] * 0.9));
                 case STAGNANT -> product.setRecommendedProduction((int) (product.getUnitsSold()[0] * 1.1));
-                case RISING -> product.setRecommendedProduction((int) (product.getUnitsSold()[0] * 0.9));
+                case RISING -> product.setRecommendedProduction((int) (product.getUnitsSold()[0] * 1.5));
                 default -> product.setRecommendedProduction((int) (product.getUnitsProduced()[0]));
             }
         }
